@@ -127,3 +127,8 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3_bucket" {
+  source      = "iis-student50/s3-bucket-jemm/aws"
+  bucket_name = "my-bucket"
+}
