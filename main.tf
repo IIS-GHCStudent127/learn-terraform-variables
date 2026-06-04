@@ -128,7 +128,8 @@ module "ec2_instances" {
   }
 }
 
-module "s3_bucket" {
-  source      = "iis-student50/s3-bucket-jemm/aws"
-  bucket_name = "my-bucket"
+module "s3-bucket-jemm" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-jemm/aws"
+  version = "1.1.0"
+  # insert required variables here
 }
